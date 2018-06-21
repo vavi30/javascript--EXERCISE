@@ -1,0 +1,61 @@
+<html>
+<body>
+
+<p id="demo"></p>
+<p id="d"></p>
+<p id="fruits"></p>
+<p id="fruit"></p>
+<p id="number"></p>
+<p id="foods"></p>
+<p id="food"></p>
+<p id="Fruits"></p>
+<p id="Fruits2"></p>
+
+<script>
+var number = [10, 20, 30, 40, 50, 60,70];
+document.getElementById("demo").innerHTML = Max(number);
+function Max(max) {
+    return Math.max.apply(null, max);
+}
+var number = [10, 20, 30, 40, 50, 60,70];
+document.getElementById("d").innerHTML = Min(number);
+function Min(min) {
+    return Math.min.apply(null, min);
+}
+
+
+var fruits=["Apple","Banana"];
+document.getElementById("fruits").innerHTML=fruits;
+fruits.splice(1,0,"Mango","Jack","Orange");
+document.getElementById("fruits").innerHTML=fruits;
+fruits.reverse();
+document.getElementById("fruit").innerHTML=fruits;
+</script>
+<script>
+
+
+var num=[4,1,8,3,9,12];
+num.sort();
+document.getElementById("number").innerHTML=number;
+
+
+var foods = ["rice", "pizza", "sandwich", "rolls"];
+document.getElementById("foods").innerHTML=foods;
+var foods = ["rice", "pizza", "sandwich", "rolls"];
+foods.pop();
+foods.push("Samsa");
+foods.shift();
+document.getElementById("food").innerHTML=foods;
+
+
+var Fruits = ["Apple"];
+Fruits.splice(0,0,"Pineapple","Lemon");
+document.getElementById("Fruits").innerHTML=Fruits;
+
+var Fruits = ["Apple"];
+Fruits.splice(1,0,"Orange","mango");
+document.getElementById("Fruits2").innerHTML=Fruits;
+</script>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<html>
+<title></title>
+<body>
+<p id="demo"></p>
+<p id="add"></p>
+<p id="multi"></p>
+<p id="sub"></p>
+<p id="div"></p>
+<p id="volume"></p>
+<p id="details"></p>
+<p id="company"></p>
+<script>
+function numberSquare(x){
+  return x*x
+} document.getElementById("demo").innerHTML="number squares= "+numberSquare(5);
+function addNum(num1, num2) {
+    return num1 + num2;
+}
+document.getElementById("add").innerHTML = "The addition of the two numbers is= " + addNum(10,5);
+function multiNum(num1, num2) {
+    return num1 * num2;
+}
+document.getElementById("multi").innerHTML = "The multiplication of the two numbers is= " + multiNum(10,5);
+function subtractNum(num1, num2) {
+    return num1 - num2;
+}
+document.getElementById("sub").innerHTML = "The subtraction of the two numbers is= " + subtractNum(10,5);
+function divideNum(num1, num2) {
+    return num1 / num2;
+}
+document.getElementById("div").innerHTML = "The division of the two numbers is= " + divideNum(10,5);
+window.alert('Hello! World');
+function volume(num1, num2, num3) {
+    return num1 * num2*num3;
+}
+document.getElementById("volume").innerHTML = "The volume of the cuboid is= " + volume(10,5,2);
+var firstname="Nimal",
+lastname="Raj",
+age=15,
+city="Kandy";
+document.getElementById("details").innerHTML = "My name is "+firstname+"."+"I'm "+age+" years old."+"I live in"+city+".";
+var x="Course Name: BIT"
+y="Course Fee: Rs 150 000"
+z="Start Date: 12.06.2018"
+w="Center: Our Office";
+document.getElementById("company").innerHTML= x+"<br>"+y+"<br>"+z+"<br>"+w;
+</script>
+
+</body>
+</html>
